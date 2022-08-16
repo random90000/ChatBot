@@ -1,6 +1,6 @@
 import random
 value = random.randint(1,5)
-answer = int(input("Guess a number between 1-5: ")) # now input is int
+answer = int(input("Guess a number between 1-5: "))
 while value:
   if (int(answer) > value):
      print("Your answer is too much, guess a new number")
@@ -9,5 +9,5 @@ while value:
     print("You answer it too little, it should be more than " + str(answer))
     answer = input("Your answer: ")
   elif (int(answer) == value):
-    print("You guessed it! The number is " + answer)
+    print("You guessed it!")
     break
