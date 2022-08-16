@@ -8,7 +8,7 @@ print("")
 #name
 print("Here is my first question, what is your name?")
 name = input (" My name is ")
-print(name, "is a very nice name")
+print(name, "is a nice name")
 print("")
 print("")
 
@@ -35,7 +35,41 @@ if books_yes_no == "yes":
   print(book + " is a nice book")
 else:
   print("Ok")
-
+print("")
+print("")
+print("What is your favourite season? spring/summer/autumn/winter")
+season = input("My favourite season is ")
+if season == "spring":
+  print("Oh thats nice :)")
+elif season == "summer":
+  print("So you like summer, I think summer is too hot for me")
+elif season == "autumn":
+  print("That is my favourite season too!Im glad that is your favourite season")
+elif season == "winter":
+  print("Thats nice. I like the snow that falls from the sky during winter")
+print("")
+print("")
+#food
+print("What do you like to eat the most?")
+food = input("I like to eat ")
+if food == "mcdonalds":
+  print("I knew you would say McDonalds, thats what most like to eat")
+elif food == "kfc":
+  print("Most people like KFC")
+elif food == "burger king":
+  print("I see, so you like fast food")
+else:
+  print("I also like that!")
+print("")
+print("")
+print("What is your favourite video game?")
+video_game = input("My favourite video game is ")
+print("I also like to play" + video_game)
+print("")
+print("")
+print("What is your favourite movie?")
+movie = input("My favourite movie is ")
+print("I have heard of " + movie + " before")
 #joke
 print("")
 print("")
@@ -44,7 +78,7 @@ joke_yes_no = input("yes/no : ")
 if joke_yes_no == "yes":
  print("Why cant people play the drums when there are no chickens around?")
  print("Because there are no chicken drumsticks")
- print("Will you like me to tell another joke?")
+ print("")
  print("")
  print("Why were cats and dogs falling from the sky?")
  print("It was raining cats and dogs")
@@ -55,12 +89,10 @@ else:
 #guess_the_number
 print("")
 print("")
-print("Want to play a game where you guess the number?")
-game_yes_no = input("yes/no:  ")
-if game_yes_no == "yes":
-  import random
-  value = random.randint(1,5)
-  answer = int(input("Guess a number between 1-5: "))
+print("Play this game")
+import random
+value = random.randint(1,5)
+answer = int(input("Guess a number between 1-5: "))
 while value:
   if (int(answer) > value):
      print("Your answer is too much, guess a new number")
@@ -69,10 +101,10 @@ while value:
     print("You answer it too little, it should be more than " + str(answer))
     answer = input("Your answer: ")
   elif (int(answer) == value):
-    print("You guessed it! The number is " + answer)
+    print("You guessed it!")
     break
   else:
     print("Ok")
 print("")
 print("")
-print("We have came to the end, thank you")
+print("We have came to the end, Goodbye " + name)
