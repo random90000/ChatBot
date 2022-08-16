@@ -1,0 +1,78 @@
+#intro
+print("Hello,Im an interactive Chatbot, I will ask you questions to know you more, tell you jokes, play games and more :)")
+print("")
+print("NOTE: Please type all your answers in lower case as the program cannot read answers in upper case")
+print("")
+print("")
+
+#name
+print("Here is my first question, what is your name?")
+name = input (" My name is ")
+print(name, "is a very nice name")
+print("")
+print("")
+
+print("Which is your favourite hobby? (please state ONE hobby only)")
+hobby = input("My favourite hobby is ")
+print(hobby + " ,Thats nice")
+print("")
+hobby_yes_no = input("Do you have another hobby besides " + hobby + "  yes/no:  ")
+if hobby_yes_no == "yes":
+  print("What is your other hobby?")
+  second_hobby = input("My other hobby is ")
+  print(second_hobby + " is a wonderful hobby")
+else:
+  print("Ok, lets move on to the next question")
+print("")
+print("")
+
+#book
+print("Do you like to read books?")
+books_yes_no = input("yes/no:  ")
+if books_yes_no == "yes":
+  print("What is your favourite book?")
+  book = input("My favourite book is ")
+  print(book + " is a nice book")
+else:
+  print("Ok")
+
+#joke
+print("")
+print("")
+print("Would you like me to tell you a some jokes")
+joke_yes_no = input("yes/no : ")
+if joke_yes_no == "yes":
+ print("Why cant people play the drums when there are no chickens around?")
+ print("Because there are no chicken drumsticks")
+ print("Will you like me to tell another joke?")
+ print("")
+ print("Why were cats and dogs falling from the sky?")
+ print("It was raining cats and dogs")
+ 
+else:
+ print("Ok, so I dont really think you like jokes")
+
+#guess_the_number
+print("")
+print("")
+print("Want to play a game where you guess the number?")
+game_yes_no = input("yes/no:  ")
+if game_yes_no == "yes":
+  import random
+  value = random.randint(1,5)
+  answer = int(input("Guess a number between 1-5: "))
+while value:
+  if (int(answer) > value):
+     print("Your answer is too much, guess a new number")
+     answer = input("Your answer:  ")
+  elif (int(answer) < value):
+    print("You answer it too little, it should be more than " + str(answer))
+    answer = input("Your answer: ")
+  elif (int(answer) == value):
+    print("You guessed it! The number is " + answer)
+    break
+  else:
+    print("Ok")
+print("")
+print("")
+print("We have came to the end, thank you")
